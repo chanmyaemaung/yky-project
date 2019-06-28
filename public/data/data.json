@@ -18,7 +18,7 @@
         {
             "sName": "Mr. Aye Kyaw",
             "sBody": "<p>စဥ္းစားပါ + စံုစမ္းပါ + ေလ့လာပါ + ယံုၾကည္မႈ့ ႐ွိမွ အလုပ္အပ္ပါ၊</p><p>No.(260/262A), 40th Street (Upper block), Kyauktada Township, Yangon/Myanmar</p>",
-            "sImage": "https://scontent.fmdl2-1.fna.fbcdn.net/v/t1.0-9/64874143_898404423841190_7360700903046774784_n.jpg?_nc_cat=106&_nc_oc=AQnFO4hZ10dLf67qepBebsWVw5HFkyzgdFmBKFw0fM-ByycSTYeX4sRANbReljekI-I&_nc_ht=scontent.fmdl2-1.fna&oh=62a39e2b8244ff94f28186d0b48bb024&oe=5D876BEC",
+            "sImage": "https://i.imgur.com/Ou3mmKAg.jpg",
             "sPosition": "Director",
             "sphone": "tel:+95967155333",
             "sFB": "https://www.facebook.com/yaykyiyara",
@@ -28,7 +28,7 @@
         {
             "sName": "Mrs. San Ngai",
             "sBody": "<p>No.(260/262A), 40th Street (Upper block), Kyauktada Township, Yangon/Myanmar</p>",
-            "sImage": "/img/profile3.jpg",
+            "sImage": "https://i.imgur.com/fmeXCYz.jpg",
             "sPosition": "Managing Director",
             "sphone": "tel:+95967155333",
             "sFB": "https://www.facebook.com/yaykyiyara",
@@ -38,7 +38,7 @@
         {
             "sName": "Mr. Thu Ra",
             "sBody": "<p>No.(260/262A), 40th Street (Upper block), Kyauktada Township, Yangon/Myanmar</p>",
-            "sImage": "./img/profile6.jpg",
+            "sImage": "https://i.imgur.com/UV9iNfW.png",
             "sPosition": "Director",
             "sphone": "tel:+95967156333",
             "sFB": "https://www.facebook.com/yaykyiyara",
@@ -48,7 +48,7 @@
         {
             "sName": "Mr. Mg Swe",
             "sBody": "<p>No.(260/262A), 40th Street (Upper block), Kyauktada Township, Yangon/Myanmar</p>",
-            "sImage": "./img/profile6.jpg",
+            "sImage": "https://i.imgur.com/LstBZWc.png",
             "sPosition": "Deputy Manager",
             "sphone": "tel:+95967156333",
             "sFB": "https://www.facebook.com/yaykyiyara",
@@ -58,7 +58,7 @@
         {
             "sName": "Ms. Khin Thida Kyaw",
             "sBody": "<p>No.(260/262A), 40th Street (Upper block), Kyauktada Township, Yangon/Myanmar</p>",
-            "sImage": "/img/profile3.jpg",
+            "sImage": "https://i.imgur.com/ZvPksuz.png",
             "sPosition": "Accountant",
             "sphone": "tel:+9596808000",
             "sFB": "https://www.facebook.com/yaykyiyara",
@@ -68,7 +68,7 @@
         {
             "sName": "Mr. Chan Myae Maung",
             "sBody": "<p>I am a web developer, supporter and software engineer currently living in Yangon, Myanmar (Burma).<p>I attended IPLC College where I majored in English at Philippines.</p><p>My interests range from photography to technology. I am also interested in design, web development and travel.</p>",
-            "sImage": "https://scontent.fmdl2-1.fna.fbcdn.net/v/t1.0-9/62529784_867989876895342_6550706771516719104_n.jpg?_nc_cat=107&_nc_oc=AQmeOSqF7TDCSqenHjWMSiaBa5WqghOULsCJ9cYASXV4fzW6dELpV_3D5B2wG4HODqg&_nc_ht=scontent.fmdl2-1.fna&oh=15e82dfc160119d21dfcbb5f9995581a&oe=5D8293C5",
+            "sImage": "https://i.imgur.com/97vffy4.png",
             "sPosition": "Web Supporter",
             "sphone": "tel:+959795883549",
             "sFB": "https://www.facebook.com/chanlaymcmm",
@@ -79,34 +79,83 @@
     "_this_is_for_the_destination_section": "This is the Destination Sectioin",
     "destination": [
         {
-            "dTitle": "Chaungtha Beach",
-            "dBody": "Beautiful Beach",
-            "dPrice": "45",
-            "dImage": "/img/beach.jpg"
+            "dTitle": "Express Northbound || Vitenam",
+            "dBody": "We will give service to you soon...",
+            "dPrice": "730",
+            "dImage": "https://i.imgur.com/iKIO4bK.jpg"
         },
         {
-            "dTitle": "Temple",
-            "dBody": "Kyoto, Japan",
-            "dPrice": "220 USD",
-            "dImage": "/img/japan.jpg"
+            "dTitle": "Bali Bucket List || Indonesia",
+            "dBody": "We will give service to you soon...",
+            "dPrice": "790 USD",
+            "dImage": "https://i.imgur.com/t1d11ED.jpg"
         },
         {
-            "dTitle": "Nice building",
-            "dBody": "Bali | Indonesia",
-            "dPrice": "3200",
-            "dImage": "/img/bali.jpg"
+            "dTitle": "Classic || Cambodia",
+            "dBody": "We will give service to you soon...",
+            "dPrice": "600",
+            "dImage": "https://i.imgur.com/aUKE2eX.jpg"
         },
         {
-            "dTitle": "Special Place",
-            "dBody": "Bagan | Myanmar",
-            "dPrice": "450",
-            "dImage": "https://images.unsplash.com/photo-1546001086-9cd8699be435?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+            "dTitle": "Southwest USA national parks tour from Las Vegas",
+            "dBody": "We will give service to you soon...",
+            "dPrice": "865",
+            "dImage": "https://i.imgur.com/JZDdj6S.jpg"
         },
         {
-            "dTitle": "Special Beach",
-            "dBody": "Yangon | Myanmar",
-            "dPrice": "450",
-            "dImage": "https://images.unsplash.com/photo-1546001086-9cd8699be435?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+            "dTitle": "A Taste of Eastern Europe || Germany, Austria, Hungary, Slovakia & Czech ",
+            "dBody": "We will give service to you soon...",
+            "dPrice": "1,051",
+            "dImage": "https://i.imgur.com/BRBiE4v.jpg"
+        }
+    ],
+    "this_is_for_main_slider": "Slider",
+    "mainSlider": [
+        {
+            "img": "/img/slide-a.jpg"
+        },
+        {
+            "img": "/img/slide-b.jpg"
+        },
+        {
+            "img": "/img/slide-c.jpg"
+        },
+        {
+            "img": "/img/slide-d.jpg"
+        },
+        {
+            "img": "https://i.imgur.com/bSHMRnt.jpg"
+        }
+    ],
+    "this_is_for_all_gallery": "Gallery",
+    "all": [
+        {
+            "img": "/img/t1.jpg"
+        }
+    ],
+    "travel": [
+        {
+            "img": "/img/t2.jpg"
+        }
+    ],
+    "flight": [
+        {
+            "img": "/img/t3.jpg"
+        }
+    ],
+    "beach1": [
+        {
+            "img": "/img/t4.jpg"
+        }
+    ],
+    "beach2": [
+        {
+            "img": "/img/t6.jpg"
+        }
+    ],
+    "gDestini": [
+        {
+            "img": "/img/t5.jpg"
         }
     ]
 }

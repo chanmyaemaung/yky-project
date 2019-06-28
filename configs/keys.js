@@ -7,7 +7,7 @@ const options = {
     socketTimeoutMS: 60000 //or 90000
 }
 
-mongoose.connect('mongodb+srv://chanlay:chanlay123@yaykyiyar-ajgvf.azure.mongodb.net/yky-blog-api?retryWrites=true&w=majority', options).then(
+mongoose.connect('mongodb://127.0.0.1:27017/yky-blog-api', options).then(
     () => {
         log('MongoDB Connection Succeeded.')
     },

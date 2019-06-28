@@ -25,23 +25,43 @@
             </div>
             <div class="row">
                 <div class="wrap-gallery">
+                    <!-- All - Gallery -->
                     <div class="col s6 gallery-img-box gallery-destination">
-                        <a class="gallery-list" href="img/t1.jpg"><img alt="gallery" src="img/t1.jpg"></a>
+                        <% jsonData.all.forEach( (all) => { %>
+                        <a class="gallery-list" href="<%= all.img %>"><img alt="YKY-GALLERY" src="<%= all.img %>"></a>
+                        <% }) %>
                     </div>
+                    <!-- All - Gallery - Travel -->
                     <div class="col s6 gallery-img-box gallery-travel">
-                        <a class="gallery-list" href="img/t2.jpg"><img alt="gallery" src="img/t2.jpg"></a>
+                        <% jsonData.travel.forEach( (travel) => { %>
+                        <a class="gallery-list" href="<%= travel.img %>"><img alt="YKY-TRAVEL"
+                                src="<%= travel.img %>"></a>
+                        <% }) %>
                     </div>
+                    <!-- All - Gallery - flight -->
                     <div class="col s6 gallery-img-box gallery-flight">
-                        <a class="gallery-list" href="img/t3.jpg"><img alt="gallery" src="img/t3.jpg"></a>
+                        <% jsonData.flight.forEach( (flight) => { %>
+                        <a class="gallery-list" href="<%= flight.img %>"><img alt="YKY-FLIGHT"
+                                src="<%= flight.img %>"></a>
+                        <% }) %>
+                    </div>
+                    <!-- All - Gallery - Beach -->
+                    <div class="col s6 gallery-img-box gallery-beach">
+                        <% jsonData.beach1.forEach( (beach1) => { %>
+                        <a class="gallery-list" href="<%= beach1.img %>"><img alt="YKY-BEACH" src="<%= beach1.img %>"></a>
+                        <% }) %>
                     </div>
                     <div class="col s6 gallery-img-box gallery-beach">
-                        <a class="gallery-list" href="img/t4.jpg"><img alt="gallery" src="img/t4.jpg"></a>
+                        <% jsonData.beach2.forEach( (beach2) => { %>
+                        <a class="gallery-list" href="<%= beach2.img %>"><img alt="YKY-BEACH" src="<%= beach2.img %>"></a>
+                        <% }) %>
                     </div>
+                    <!-- All - Gallery - Travel -->
                     <div class="col s6 gallery-img-box gallery-destination">
-                        <a class="gallery-list" href="img/t5.jpg"><img alt="gallery" src="img/t5.jpg"></a>
-                    </div>
-                    <div class="col s6 gallery-img-box gallery-beach">
-                        <a class="gallery-list" href="img/t6.jpg"><img alt="gallery" src="img/t6.jpg"></a>
+                        <% jsonData.gDestini.forEach( (destin) => { %>
+                        <a class="gallery-list" href="<%= destin.img %>"><img alt="YKY-DESTINATION"
+                                src="<%= destin.img %>"></a>
+                        <% }) %>
                     </div>
                 </div>
             </div>
