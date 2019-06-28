@@ -1,5 +1,38 @@
 <% include _layouts/header %>
 
-
+<!-- Blog -->
+<div class="section news">
+    <div class="container">
+        <div class="row row-title">
+            <div class="col s12">
+                <div class="section-title">
+                    <span class="theme-secondary-color">Latest</span> News
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <% posts.forEach( (post) =>{ %>
+            <div class="col s12">
+                <div class="news-content">
+                    <div class="news-detail">
+                        <h4 class="news-title"><a href=""><%= post.title %></a></h4>
+                        <div class="date">
+                            <span><i class="fa fa-calendar"></i> <%= post.date.toDateString() %></span>
+                        </div>
+                        <img src="<%= post.image %>" alt="Yay Kyi Yar - Images">
+                        <p>
+                            <%- post.content.substring(0,150) %>...
+                        </p>
+                        <div class="readmore-news">
+                            <a href="/blog/<%= post._id %>" class="readmore-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% }) %>
+        </div>
+    </div>
+</div>
+<!-- END Blog -->
 
 <% include _layouts/footer %>
