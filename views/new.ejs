@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .my-form {
+            background: #efefef;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .my-form p {
+            background: #ffffff;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .my-form p label {
+            cursor: pointer;
+            display: block;
+            padding: 10px 10px 0px;
+        }
+
+        .my-form p .meta {
+            font-style: italic;
+            font-weight: normal;
+            padding: 0px 10px;
+        }
+
+        .my-form p span.wrap {
+            display: block;
+            margin-left: 10px;
+        }
+
+        .my-form p span input,
+        .my-form p span textarea {
+            background: rgba(0, 0, 0, 0);
+            border: 0px none;
+            color: #666666;
+            cursor: pointer;
+            font-size: 1em;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        .my-form .cta-holder {
+            background: rgba(0, 0, 0, 0);
+            overflow: auto;
+        }
+
+        p.focus {
+            background-color: #d7edef;
+        }
+
+        .cta-box {
+            overflow: auto;
+            padding: 30px 0 0 20px;
+        }
+
+        .cta-button,
+        #submit {
+            background: #0096cc;
+            border: 0 none;
+            color: #ffffff;
+            cursor: pointer;
+            display: block;
+            float: left;
+            font-size: 1.6em;
+            font-weight: bold;
+            padding: 12px 30px 8px;
+            text-decoration: none;
+        }
+
+        .cta-button:visited {}
+
+        .cta-button:hover,
+        #submit:hover {
+            background: #666;
+        }
+
+        .cta-button:active,
+        #submit:active {
+            background: #bbbbbb;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="my-form" action="/blog" method="POST">
+        <p>
+            <label for="name">Title *</label>
+            <span class="wrap">
+                <input type="text" name="post[title]" value="" size="40" class="form-control text" id="name" />
+            </span>
+        </p>
+        <p>
+            <label for="image">Image URL *</label>
+            <span class="wrap">
+                <input type="text" name="post[image]" value="" size="40" class="form-control text" id="e-mail" />
+            </span>
+        </p>
+        <p>
+            <label for="content">Your content:</label>
+            <span class="wrap">
+                <textarea name="post[content]" cols="40" rows="10" class="textarea" id="chan"
+                    aria-invalid="false"></textarea>
+            </span>
+        </p>
+        <p class="cta-holder">
+            <input type="submit" value="Submit" class="cta-button" />
+        </p>
+    </form>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("form.my-form input, form.my-form textarea, form.my-form input").focus(function () {
+                $(this).parent().parent().addClass("focus");
+            });
+            $("form.my-form input, form.my-form textarea, form.my-form input").blur(function () {
+                $(this).parent().parent().removeClass("focus");
+            });
+        })
+    </script>

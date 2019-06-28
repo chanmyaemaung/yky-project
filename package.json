@@ -1,0 +1,29 @@
+{
+  "name": "yky_web_pj",
+  "version": "1.0.0",
+  "description": "Yay Kyi Yar (Travel & Tour Co.,Ltd.)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "engines": {
+    "node": "8.10.0"
+  },
+  "author": "Chan Myae Maung",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "express-sanitizer": "^1.0.5",
+    "method-override": "^3.0.0",
+    "mongodb": "^3.2.7",
+    "mongoose": "^5.6.1",
+    "nodemailer": "^6.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}

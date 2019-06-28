@@ -1,0 +1,250 @@
+<% include _layouts/header %>
+
+<!-- MAIN SLIDER -->
+<div class="main-slider" data-indicators="true">
+    <div class="carousel carousel-slider " data-indicators="true">
+        <a class="carousel-item"><img src="img/slide-a.jpg" alt="slider"></a>
+        <a class="carousel-item"><img src="img/slide-b.jpg" alt="slider"></a>
+        <a class="carousel-item"><img src="img/slide-c.jpg" alt="slider"></a>
+        <a class="carousel-item"><img src="img/slide-d.jpg" alt="slider"></a>
+    </div>
+</div>
+<!-- END MAIN SLIDER -->
+
+<!-- SERVICE -->
+<div class="section service">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="section-title">
+                    <span class="theme-secondary-color">Our</span> Service
+                </div>
+            </div>
+        </div>
+        <div class="row icon-service">
+            <div class="col s4 m4 l2">
+                <div class="content">
+                    <div class="in-content">
+                        <div class="in-in-content">
+                            <i class="fa fa-ticket" aria-hidden="true" style="color: #fe0000;"></i>
+                            <h5>Booking<br>Tickets</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s4 m4 l2">
+                <div class="content">
+                    <div class="in-content">
+                        <div class="in-in-content">
+                            <i class="fa fa-map-o" aria-hidden="true" style="color: #43ba0f;"></i>
+                            <h5>Planning<br>Tours</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s4 m4 l2">
+                <div class="content">
+                    <div class="in-content">
+                        <div class="in-in-content">
+                            <i class="fa fa-newspaper-o" aria-hidden="true" style="color: #ff0090;"></i>
+                            <h5>Documents</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s4 m4 l2">
+                <div class="content">
+                    <div class="in-content">
+                        <div class="in-in-content">
+                            <i class="fa fa-umbrella" aria-hidden="true" style="color: #ff7e00;"></i>
+                            <h5>Travel<br>Insurance</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s4 m4 l2">
+                <div class="content">
+                    <div class="in-content">
+                        <div class="in-in-content">
+                            <i class="fa fa-building" aria-hidden="true" style="color: #20b8ff;"></i>
+                            <h5>Booking<br>Hotel</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s4 m4 l2">
+                <div class="content">
+                    <div class="in-content">
+                        <div class="in-in-content">
+                            <i class="fa fa-car" aria-hidden="true" style="color: #3f22d1;"></i>
+                            <h5>Transport</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section promo">
+    <div id="promo-item" class="owl-carousel center">
+        <div class="item theme-gradation">
+            <div class="promo-caption">
+                <h2>See Our Special<br>Promo Offers</h2>
+                <a href="<%= jsonData.phone %>">
+                    <div class="btn transparent">Get In Touch!</div>
+                </a>
+            </div>
+            <div class="background-promo" style="background-image: url(img/landscape2.jpg);">
+            </div>
+        </div>
+        <div class="item theme-gradation">
+            <div class="promo-caption">
+                <h2>Best of Destinations<br>Worldwide</h2>
+                <a href="<%= jsonData.phone %>">
+                    <div class="btn transparent">Get In Touch!</div>
+                </a>
+            </div>
+            <div class="background-promo" style="background-image: url(img/landscape2.jpg);">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END SERVICE -->
+
+
+
+
+<!-- DESTINATION -->
+<div class="section destinations">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="section-title">
+                    <span class="theme-secondary-color">Vacations</span> destinations
+                </div>
+            </div>
+        </div>
+        <div class="row row-list-destination">
+            <div class="col s12">
+
+                <% jsonData.destination.forEach( (desti) => { %>
+                <div class="vacation-place">
+                    <div class="vd-photo">
+                        <img src="<%= desti.dImage %>" alt="img">
+                    </div>
+                    <div class="vd-des">
+                        <div class="vd-des-left">
+                            <div class="vd-des-name"><%= desti.dTitle %></div>
+                            <div class="vd-des-location"><%= desti.dBody %></div>
+                        </div>
+                        <div class="vd-des-right">
+                            <div class="vd-des-price">
+                                <i class="fa fa-tag" aria-hidden="true"></i> $<%= desti.dPrice %>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div> <!-- ./vacation-place -->
+                <% }) %>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END DESTINATION -->
+
+<!-- GALLERY -->
+<div class="section gallery">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="section-title">
+                    <span class="theme-secondary-color">PHOTO</span> GALLERY
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <!-- filter -->
+                <div class="filter-gallery">
+                    <button data-filter="gallery-no-filter" class="filter-button active">All</button>
+                    <button data-filter="gallery-travel" class="filter-button">Travel</button>
+                    <button data-filter="gallery-destination" class="filter-button">Destination</button>
+                    <button data-filter="gallery-flight" class="filter-button">Flight</button>
+                    <button data-filter="gallery-beach" class="filter-button">Beach</button>
+                </div>
+                <!-- /filter -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="wrap-gallery">
+                <div class="col s6 gallery-img-box gallery-destination">
+                    <a class="gallery-list" href="img/t1.jpg"><img alt="gallery" src="img/t1.jpg"></a>
+                </div>
+                <div class="col s6 gallery-img-box gallery-travel">
+                    <a class="gallery-list" href="img/t2.jpg"><img alt="gallery" src="img/t2.jpg"></a>
+                </div>
+                <div class="col s6 gallery-img-box gallery-flight">
+                    <a class="gallery-list" href="img/t3.jpg"><img alt="gallery" src="img/t3.jpg"></a>
+                </div>
+                <div class="col s6 gallery-img-box gallery-beach">
+                    <a class="gallery-list" href="img/t4.jpg"><img alt="gallery" src="img/t4.jpg"></a>
+                </div>
+                <div class="col s6 gallery-img-box gallery-destination">
+                    <a class="gallery-list" href="img/t5.jpg"><img alt="gallery" src="img/t5.jpg"></a>
+                </div>
+                <div class="col s6 gallery-img-box gallery-beach">
+                    <a class="gallery-list" href="img/t6.jpg"><img alt="gallery" src="img/t6.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END GALLERY -->
+
+<!-- TESTIMONIAL  -->
+<div class="section testimonial">
+    <div class="testimonial-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="section-title">OUR OFFICE STAFF</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="wrap-item-testimonial">
+                    <div id="testimonial-item" class="owl-carousel">
+                        <% jsonData.staff.forEach( (data) => { %>
+                        <!-- item -->
+                        <div class="item">
+                            <div class="item-testimonial">
+                                <div class="client-info">
+                                    <div class="client-img">
+                                        <img src="<%= data.sImage %>" alt="profile">
+                                    </div>
+                                </div>
+                                <div class="client-content">
+                                    <p>
+                                        <%- data.sBody %>
+                                    </p>
+                                    <div class="client-title">
+                                        <h4><%= data.sName %></h4>
+                                        <h5><%= data.sPosition %></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                        <% }) %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="background-testimonial" style="background-image: url(img/landscape2.jpg);">
+    </div>
+</div>
+<!-- END TESTIMONIAL  -->
+
+
+<% include _layouts/footer %>

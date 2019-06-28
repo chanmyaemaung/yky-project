@@ -1,0 +1,46 @@
+<% include _layouts/header %>
+
+<!-- CONTENT -->
+<div id="page-content">
+    <div class="section destinations">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="section-title">
+                        <span class="theme-secondary-color">Vacations</span> destinations
+                    </div>
+                </div>
+            </div>
+            <div class="row row-list-destination">
+                <div class="col s12">
+                    <!-- Stat loop from here -->
+                    <% jsonData.destination.forEach( (desti) => { %>
+                    <a href="/">
+                        <div class="vacation-place card z-depth-3">
+                            <div class="vd-photo">
+                                <img src="<%= desti.dImage %>" alt="img">
+                            </div>
+                            <div class="vd-des">
+                                <div class="vd-des-left">
+                                    <div class="vd-des-name"><%= desti.dTitle %></div>
+                                    <div class="vd-des-location"><%= desti.dBody %></div>
+                                </div>
+                                <div class="vd-des-right">
+                                    <div class="vd-des-price">
+                                        <i class="fa fa-tag" aria-hidden="true"></i> $<%= desti.dPrice %>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <% }) %>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CONTENT -->
+
+<% include _layouts/footer %>

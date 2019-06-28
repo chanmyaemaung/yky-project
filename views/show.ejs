@@ -1,0 +1,28 @@
+<% include _layouts/header %>
+
+<!-- CONTENT -->
+<div id="page-content">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card z-depth-2">
+                    <h4 class="center indigo-text text-darken-4"><%= post.title %></h4>
+                    <span><i class="fa fa-calendar"></i> <%= post.date.toDateString() %></span>
+                    <div class="card-image">
+                        <img src="<%= post.image %>" alt="yky-image">
+                    </div>
+                    <div class="card-content">
+                        <p><%- post.content %></p>
+                    </div>
+                </div>
+            </div>
+            <form action="/blog/<%= post._id %>?_method=DELETE" method="POST">
+                <a class="btn">Delete</a>
+                <a class="btn right" href="/blog/<%= post._id %>/edit">Edit</a>
+            </form>
+        </div>
+    </div> <!-- /.End Container-->
+</div>
+<!-- END CONTENT -->
+
+<% include _layouts/footer %>

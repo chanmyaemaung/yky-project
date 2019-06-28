@@ -1,0 +1,61 @@
+<% include _layouts/header %>
+
+<!-- CONTENT -->
+<div id="page-content">
+    <div class="section section_team">
+        <div class="container">
+            <div class="row row-title">
+                <div class="col s12">
+                    <div class="section-title row-title-team">
+                        <span class="theme-secondary-color">Our</span> Team
+                    </div>
+                </div>
+            </div>
+
+            <% jsonData.staff.forEach((staff)=>{ %>
+            <!-- item -->
+            <div class="row row-team z-depth-3 card">
+                <div class="col s12">
+                    <div class="wrap-team">
+                        <div class="wt-left">
+                            <div class="wt-photo waves-effect" style="background-image: url(<%= staff.sImage %>);">
+                            </div>
+                        </div>
+                        <div class="wt-right">
+                            <div class="wtr-name"><%= staff.sName %></div>
+                            <div class="wtr-title"><%= staff.sPosition %></div>
+                            <div class="wtr-info"><%- staff.sBody %></div>
+                            <div class="wtr-sosmed card-action">
+                                <div class="sosmed-icon">
+                                    <a href="<%= staff.sFB %>" target="_blank" class="facebook-bg icon-round">
+                                        <div class="wtr-icon">
+                                            <i class="fa fa-facebook"></i>
+                                        </div>
+                                    </a>
+                                    <a href="<%= staff.sTW %>" target="_blank" class="twitter-bg icon-round">
+                                        <div class="wtr-icon">
+                                            <i class="fa fa-twitter"></i>
+                                        </div>
+                                    </a>
+                                    <a href="<%= staff.sINSTRA %>" target="_blank" class="instagram-bg icon-round">
+                                        <div class="wtr-icon">
+                                            <i class="fa fa-instagram"></i>
+                                        </div>
+                                    </a>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- end item -->
+            <% }) %>
+
+        </div>
+    </div>
+</div>
+<!-- END CONTENT -->
+
+<% include _layouts/footer %>

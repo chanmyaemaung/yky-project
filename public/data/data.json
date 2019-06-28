@@ -1,0 +1,112 @@
+{
+    "_this_is_for_general_section": "This is the Genereal Sectioin",
+    "fb": "https://www.facebook.com/yaykyiyara",
+    "tw": "https://www.twitter.com",
+    "ld": "htts://linkedin.com",
+    "instra": "https://www.instagram.com",
+    "phone": "tel:+959 518 3828",
+    "email": "mailto:yaykyiyar7@mail.com",
+    "h": "Home",
+    "f": "Features",
+    "p": "Post",
+    "c": "Contact",
+    "cls": "Close",
+    "vdo": "Video",
+    "copyR": "Copyright 2019. All rights reserved",
+    "_this_is_for_the_staff_section": "This is the Staff Sectioin",
+    "staff": [
+        {
+            "sName": "Mr. Aye Kyaw",
+            "sBody": "<p>စဥ္းစားပါ + စံုစမ္းပါ + ေလ့လာပါ + ယံုၾကည္မႈ့ ႐ွိမွ အလုပ္အပ္ပါ၊</p><p>No.(260/262A), 40th Street (Upper block), Kyauktada Township, Yangon/Myanmar</p>",
+            "sImage": "https://scontent.fmdl2-1.fna.fbcdn.net/v/t1.0-9/64874143_898404423841190_7360700903046774784_n.jpg?_nc_cat=106&_nc_oc=AQnFO4hZ10dLf67qepBebsWVw5HFkyzgdFmBKFw0fM-ByycSTYeX4sRANbReljekI-I&_nc_ht=scontent.fmdl2-1.fna&oh=62a39e2b8244ff94f28186d0b48bb024&oe=5D876BEC",
+            "sPosition": "Director",
+            "sphone": "tel:+95967155333",
+            "sFB": "https://www.facebook.com/yaykyiyara",
+            "sTW": "https://www.twitter.com",
+            "sINSTRA": "https://www.instagram.com"
+        },
+        {
+            "sName": "Mrs. San Ngai",
+            "sBody": "<p>No.(260/262A), 40th Street (Upper block), Kyauktada Township, Yangon/Myanmar</p>",
+            "sImage": "/img/profile3.jpg",
+            "sPosition": "Managing Director",
+            "sphone": "tel:+95967155333",
+            "sFB": "https://www.facebook.com/yaykyiyara",
+            "sTW": "https://www.twitter.com",
+            "sINSTRA": "https://www.instagram.com"
+        },
+        {
+            "sName": "Mr. Thu Ra",
+            "sBody": "<p>No.(260/262A), 40th Street (Upper block), Kyauktada Township, Yangon/Myanmar</p>",
+            "sImage": "./img/profile6.jpg",
+            "sPosition": "Director",
+            "sphone": "tel:+95967156333",
+            "sFB": "https://www.facebook.com/yaykyiyara",
+            "sTW": "https://www.twitter.com",
+            "sINSTRA": "https://www.instagram.com"
+        },
+        {
+            "sName": "Mr. Mg Swe",
+            "sBody": "<p>No.(260/262A), 40th Street (Upper block), Kyauktada Township, Yangon/Myanmar</p>",
+            "sImage": "./img/profile6.jpg",
+            "sPosition": "Deputy Manager",
+            "sphone": "tel:+95967156333",
+            "sFB": "https://www.facebook.com/yaykyiyara",
+            "sTW": "https://www.twitter.com",
+            "sINSTRA": "https://www.instagram.com"
+        },
+        {
+            "sName": "Ms. Khin Thida Kyaw",
+            "sBody": "<p>No.(260/262A), 40th Street (Upper block), Kyauktada Township, Yangon/Myanmar</p>",
+            "sImage": "/img/profile3.jpg",
+            "sPosition": "Accountant",
+            "sphone": "tel:+9596808000",
+            "sFB": "https://www.facebook.com/yaykyiyara",
+            "sTW": "https://www.twitter.com",
+            "sINSTRA": "https://www.instagram.com"
+        },
+        {
+            "sName": "Mr. Chan Myae Maung",
+            "sBody": "<p>I am a web developer, supporter and software engineer currently living in Yangon, Myanmar (Burma).<p>I attended IPLC College where I majored in English at Philippines.</p><p>My interests range from photography to technology. I am also interested in design, web development and travel.</p>",
+            "sImage": "https://scontent.fmdl2-1.fna.fbcdn.net/v/t1.0-9/62529784_867989876895342_6550706771516719104_n.jpg?_nc_cat=107&_nc_oc=AQmeOSqF7TDCSqenHjWMSiaBa5WqghOULsCJ9cYASXV4fzW6dELpV_3D5B2wG4HODqg&_nc_ht=scontent.fmdl2-1.fna&oh=15e82dfc160119d21dfcbb5f9995581a&oe=5D8293C5",
+            "sPosition": "Web Supporter",
+            "sphone": "tel:+959795883549",
+            "sFB": "https://www.facebook.com/chanlaymcmm",
+            "sTW": "https://www.twitter.com/itchanlay",
+            "sINSTRA": "https://www.instagram.com/cxanmyaemaung"
+        }
+    ],
+    "_this_is_for_the_destination_section": "This is the Destination Sectioin",
+    "destination": [
+        {
+            "dTitle": "Chaungtha Beach",
+            "dBody": "Beautiful Beach",
+            "dPrice": "45",
+            "dImage": "/img/beach.jpg"
+        },
+        {
+            "dTitle": "Temple",
+            "dBody": "Kyoto, Japan",
+            "dPrice": "220 USD",
+            "dImage": "/img/japan.jpg"
+        },
+        {
+            "dTitle": "Nice building",
+            "dBody": "Bali | Indonesia",
+            "dPrice": "3200",
+            "dImage": "/img/bali.jpg"
+        },
+        {
+            "dTitle": "Special Place",
+            "dBody": "Bagan | Myanmar",
+            "dPrice": "450",
+            "dImage": "https://images.unsplash.com/photo-1546001086-9cd8699be435?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+        },
+        {
+            "dTitle": "Special Beach",
+            "dBody": "Yangon | Myanmar",
+            "dPrice": "450",
+            "dImage": "https://images.unsplash.com/photo-1546001086-9cd8699be435?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+        }
+    ]
+}

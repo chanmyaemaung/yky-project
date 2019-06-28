@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1  maximum-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="HandheldFriendly" content="True">
+
+    <link rel="icon" href="/img/yky-img/logo.png" type="image/x-icon">
+    <!-- <link rel="icon" type="image/x-icon" href="/img/yky-img/32x32.png" sizes="16x16 32x32" /> -->
+    <!-- CSS  -->
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/app.css">
+    <!-- materialize icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="/lib/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/lib/owlcarousel/assets/owl.theme.default.min.css">
+    <!-- Magnific Popup core CSS /file -->
+    <link rel="stylesheet" href="/lib/Magnific-Popup-master/dist/magnific-popup.css">
+
+    <!-- PEAGE DEFAULT: SEO TAGS -->
+    <meta name="author" content="Yay Kyi Yar">
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Visas, Flights, Hotels, Buses, Tours, Visa & Cars Booking - Myanmar | Yay Kyi Yar">
+    <meta itemprop="description"
+        content="Myanmar’s first one-stop online travel portal, offering the largest inventory of hotels, flights, cars, buses, and tours, with multiple secure payment options for local and international travelers.">
+    <meta itemprop="image" content="/img/yky-img/logo.png">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="product">
+    <meta name="twitter:site" content="Yay Kyi Yar Travel and Tours">
+    <meta name="twitter:title"
+        content="Visas, Flights, Hotels, Buses, Tours, Visa & Cars Booking - Myanmar | Yay Kyi Yar">
+    <meta name="twitter:description"
+        content="Myanmar’s first one-stop online travel portal, offering the largest inventory of hotels, flights, cars, buses, and tours, with multiple secure payment options for local and international travelers.">
+    <meta name="twitter:image" content="/img/yky-img/logo.png">
+
+    <!-- Open Graph data -->
+    <meta property="og:title"
+        content="Visa, Flights, Hotels, Buses, Tours, Visa & Cars Booking - Myanmar | Yay Kyi Yar" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="http://yaykyiyar.com" />
+    <meta property="og:image" content="/img/yky-img/logo.png" />
+    <meta property="og:description"
+        content="Myanmar’s first one-stop online travel portal, offering the largest inventory of hotels, flights, cars, buses, and tours, with multiple secure payment options for local and international travelers.">
+</head>
+
+<body id="homepage">
+    <!-- BEGIN PRELOADING -->
+    <div class="preloading">
+        <div class="wrap-preload">
+            <div class="cssload-loader"></div>
+        </div>
+    </div>
+    <!-- END PRELOADING -->
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="nav-wrapper container">
+            <div class="header-logo">
+                <a href="/" class="nav-logo"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> <%= navTitle %></a>
+            </div>
+            <div class="header-menu-button">
+                <a href="/" data-activates="nav-mobile" class="button-collapse">
+                    <div class="cst-btn-menu">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- SIDE NAV -->
+    <nav>
+        <ul id="nav-mobile" class="side-nav">
+            <li class="profil">
+                <img src="/img/logo.png" alt="profile">
+                <h2><%= navTitle %></h2>
+                <h6><%= company %></h6>
+            </li>
+            <li>
+                <a href="/"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+            </li>
+            <li>
+                <a href="/destination"><i class="fa fa-map" aria-hidden="true"></i>Destination</a>
+            </li>
+            <li>
+                <a href="/team"><i class="fa fa-leaf" aria-hidden="true"></i>Our Team</a>
+            </li>
+            <li>
+                <a href="/gallery"><i class="fa fa-camera" aria-hidden="true"></i>Gallery</a>
+            </li>
+            <li>
+                <a href="/blog"><i class="fa fa-pencil-square" aria-hidden="true"></i>Blog</a>
+            </li>
+            <li>
+                <a href="/contact"><i class="fa fa-envelope" aria-hidden="true"></i>Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- END SIDE NAV -->
+
+    <!-- TOP MENU-->
+    <div class="section top-header-menu">
+        <div class="wrap-thm">
+            <div class="container">
+                <div class="row row-thm">
+                    <div class="col s12">
+                        <div class="thm-menu tooltipped" data-position="bottom" data-delay="50"
+                            data-tooltip="This section still modified...">
+                            <i class="fa fa-user" aria-hidden="true"></i> Account
+                        </div>
+                        <div class="thm-menu tooltipped" data-position="bottom" data-delay="50"
+                            data-tooltip="This section still modified...">
+
+                            <i class="fa fa-globe" aria-hidden="true"></i> My Trip
+                        </div>
+                        <div class="thm-menu tooltipped" data-position="bottom" data-delay="50"
+                            data-tooltip="This section still modified...">
+
+                            <i class="fa fa-life-ring" aria-hidden="true"></i> favourite
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END TOP MENU-->
