@@ -7,7 +7,7 @@ const options = {
     socketTimeoutMS: 60000 //or 90000
 }
 
-mongoose.connect('mongodb://chanlay:chanlay123@ds343887.mlab.com:43887/heroku_qnsz0r7k', options).then(
+mongoose.connect('mongodb://127.0.0.1:27017/yky-blog-api', options).then(
     () => {
         log('MongoDB Connection Succeeded.')
     },
@@ -18,6 +18,7 @@ mongoose.connect('mongodb://chanlay:chanlay123@ds343887.mlab.com:43887/heroku_qn
 
 
 // mongodb://127.0.0.1:27017/yky-blog-api
+// mongodb://chanlay:chanlay123@ds343887.mlab.com:43887/heroku_qnsz0r7k
 
 
 
