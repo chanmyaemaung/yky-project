@@ -30,7 +30,7 @@ router.post('/', (req, res) => {
     // // Step 2
     let mailOptions = {
         from: req.body.email,
-        to: process.env.EMAIL,
+        to: 'yaykyiyar7@gmail.com'+ 'chanmyaemaung@yahoo.com' + process.env.EMAIL,
         subject: 'Yay Kyi Yar: ' + req.body.mainsub,
         name: req.body.name,
         phone: req.body.phone,
