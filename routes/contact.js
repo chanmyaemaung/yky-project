@@ -42,7 +42,7 @@ router.post('/', (req, res) => {
     }
 
     // Step 3
-    smtpTransport.sendMail(mailOptions, function (err, data) {
+    smtpTransport.sendMail(mailOptions, (err, data) => {
         if (err) {
             return log(err)
         }
