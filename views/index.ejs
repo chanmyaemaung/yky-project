@@ -4,7 +4,7 @@
 <div class="main-slider" data-indicators="true">
     <div class="carousel carousel-slider " data-indicators="true">
         <% jsonData.mainSlider.forEach( (slider) => { %>
-            <a class="carousel-item"><img src="<%= slider.img %>" alt="YKY-IMAGE-SLIDER"></a>
+        <a class="carousel-item"><img src="<%= slider.img %>" alt="YKY-IMAGE-SLIDER"></a>
         <% }) %>
     </div>
 </div>
@@ -130,9 +130,7 @@
                     </div>
                     <div class="news-detail">
                         <img src="<%= post.image %>" alt="yky-image">
-                        <p>
-                            <%- post.content.substring(0,150) %>...
-                        </p>
+                        <h3 class="flow-text"><%- post.content.substring(0,150) %>...</h3>
                         <div class="readmore-news">
                             <a href="/blog/<%= post._id %>" class="waves-effect waves-light btn">Read More</a>
                         </div>

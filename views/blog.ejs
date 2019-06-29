@@ -20,9 +20,7 @@
                             <span><i class="fa fa-calendar"></i> <%= post.date.toDateString() %></span>
                         </div>
                         <img src="<%= post.image %>" alt="Yay Kyi Yar - Images">
-                        <p>
-                            <%- post.content.substring(0,150) %>...
-                        </p>
+                        <h4 class="flow-text"><%- post.content.substring(0,150) %>...</h4>
                         <div class="readmore-news">
                             <a href="/blog/<%= post._id %>" class="readmore-btn">Read More</a>
                         </div>
