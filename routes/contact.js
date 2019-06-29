@@ -47,6 +47,7 @@ router.post('/', (req, res) => {
             log('Error occurs', err)
         } else {
             log('Your email has been sent!', data)
+            res.redirect('/')
         }
     })
 })
