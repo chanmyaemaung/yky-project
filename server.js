@@ -1,13 +1,27 @@
 const express = require('express')
 const path = require('path')
-const bodyParser = require('body-parser')
-require('./configs/keys') // DB
 const methodOverride = require('method-override')
+const mongoose = require('mongoose')
 const expressSanitizer = require('express-sanitizer');
 const jsonData = require('./public/data/data.json')
 const log = console.log
 // Init app
 const app = express()
+
+
+// Model Config
+require('./models/posts')
+
+// DB Config
+const db = require('./configs/keys').mongoURI
+
+// Connect to MongoDB
+mongoose.connect(db, {
+        useNewUrlParser: true
+    })
+    .then(() => log('MongoDB Connected'))
+    .catch(err => log(err))
+
 
 
 // View engine setup
@@ -18,12 +32,9 @@ app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname, 'public')))
 
 // Body Parser middleware
-// parse application/x-www.form-urlencoded
-app.use(bodyParser.urlencoded({
-    extended: true // Really important!
+app.use(express.urlencoded({
+    extended: true
 }))
-// parse application/json
-app.use(bodyParser.json())
 
 // Mount express-sanitizer middleware here
 app.use(methodOverride("_method"));
