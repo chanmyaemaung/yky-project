@@ -4,7 +4,9 @@ const log = console.log
 
 const options = {
     useNewUrlParser: true,
-    socketTimeoutMS: 60000 //or 90000
+    socketTimeoutMS: 60000, //or 90000
+    connectTimeoutMS: 90000,
+    reconnectTries: 1000
 }
 
 mongoose.connect('mongodb://chanlay:chanlay123@ds343887.mlab.com:43887/heroku_qnsz0r7k', options).then(
