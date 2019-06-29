@@ -21,8 +21,8 @@ router.post('/', (req, res) => {
         secure: true,
 
         auth: {
-            user: 'process.env.EMAIL',
-            pass: 'process.env.PASSWORD'
+            user: 'maungmaungyoker.mmy@gmail.com', // process.env.EMAIL
+            pass: 'Mg18Nin$' // process.env.PASSWORD
         }
     })
 
@@ -30,7 +30,7 @@ router.post('/', (req, res) => {
     // // Step 2
     let mailOptions = {
         from: req.body.email,
-        to: 'process.env.EMAIL.',
+        to: 'yaykyiyar7@gmail.com, maungmaungyoker.mmy@gmail.com',
         cc: 'chanmyaemaung@yahoo.com',
         subject: 'Yay Kyi Yar: ' + req.body.mainsub,
         name: req.body.name,
