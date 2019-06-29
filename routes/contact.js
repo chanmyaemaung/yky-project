@@ -38,17 +38,15 @@ router.post('/', (req, res) => {
         mainsub: req.body.mainsub,
         text: req.body.text,
         // html: '<ul>' + req.body.text + '</ul>' + '<table>' + '<thead>' + '<tr>' + '<th>' + 'Name' + '</th>' + '<th>' + 'Phone' + '</th>' + '<th>' + 'Email' + '</th>' + '</tr>' + '</thead>' + '<tbody>' + '<tr>' + '<td>' + req.body.name + '</td>' + '<td>' + req.body.phone + '</td>' + '<td>' + req.body.email + '</td>' + '</tr>' + '</tbody>' + '</table>'
-        html: '<p>' + req.body.text + '</p>' + '<br/>' + '<hr>' + 'Name: ' + req.body.name + '<br/>' + 'Phone No: ' + req.body.phone + '<br/>' + 'Email: ' + req.body.email
+        html: '<p>' + '<b>' + req.body.text + '</b>' + '</p>' + '<br/>' + '<hr>' + 'Name: ' + req.body.name + '<br/>' + 'Phone No: ' + req.body.phone + '<br/>' + 'Email: ' + req.body.email
     }
 
     // Step 3
     smtpTransport.sendMail(mailOptions, function (err, data) {
         if (err) {
-            log('Error occurs', err)
-        } else {
-            log('Your email has been sent!', data)
-            res.redirect('/')
+            return log(err)
         }
+        log('Your email has been sent' + data.response)
     })
 })
 
