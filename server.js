@@ -4,6 +4,7 @@ const bodyParser = require('body-parser')
 require('./configs/keys') // DB
 const methodOverride = require('method-override')
 const expressSanitizer = require('express-sanitizer');
+const jsonData = require('./public/data/data.json')
 const log = console.log
 // Init app
 const app = express()
@@ -45,6 +46,16 @@ app.use('/team', team)
 app.use('/gallery', gallery)
 app.use('/blog', blog)
 app.use('/contact', contact)
+
+// catch error handleing
+app.use((req, res) => {
+    res.status(404).render('404', {
+        title: 'Yay Kyi Yar Travel & Tour: Search Yay Kyi Yar Myanmar Hotels, Cheap Flights, Vacations, Tours',
+        navTitle: 'Yay Kyi Yar',
+        company: 'Travel & Tour Co., Ltd.',
+        jsonData: jsonData
+    })
+})
 
 // Start the server
 const port = process.env.PORT || 4444
