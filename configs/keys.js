@@ -1,4 +1,5 @@
-dbPassword = 'mongodb+srv://chanlay:'+ encodeURIComponent('chanlay123') + '@yaykyiyar-ajgvf.azure.mongodb.net/yky-blog?retryWrites=true';
+
+dbPassword = 'mongodb+srv://chanlay:'+ encodeURIComponent('chanlay123') + '@yaykyiyar-ajgvf.azure.mongodb.net/yky-blog?retryWrites=true&w=majority?socketTimeoutMS=90000';
 
 module.exports = {
     mongoURI: dbPassword

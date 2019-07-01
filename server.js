@@ -12,6 +12,13 @@ const app = express()
 // Model Config
 require('./models/posts')
 
+// const options = {
+//     useNewUrlParser: true,
+//     socketTimeoutMS: 60000,
+//     connectTimeoutMS: 90000,
+//     reconnectTries: 1000
+// }
+
 // DB Config
 const db = require('./configs/keys').mongoURI
 
@@ -21,6 +28,15 @@ mongoose.connect(db, {
     })
     .then(() => log('MongoDB Connected...'))
     .catch(err => log(err))
+
+// mongoose.connect(db, options)
+//     .then(() => {
+//             log('MongoDB Connection Succeded...')
+//         },
+//         err => {
+//             log(err)
+//         }
+//     )
 
 
 
