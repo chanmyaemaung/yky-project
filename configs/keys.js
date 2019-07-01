@@ -1,5 +1,6 @@
 
-dbPassword = 'mongodb+srv://chanlay:'+ encodeURIComponent('chanlay123') + '@yaykyiyar-ajgvf.azure.mongodb.net/yky-blog?retryWrites=true&w=majority?socketTimeoutMS=90000';
+// dbPassword = 'mongodb+srv://chanlay:'+ encodeURIComponent('chanlay123') + '@yaykyiyar-ajgvf.azure.mongodb.net/yky-blog?retryWrites=true&w=majority?socketTimeoutMS=90000';
+dbPassword = 'mongodb://chanlay:chanlay123@yaykyiyar-shard-00-01-ajgvf.azure.mongodb.net:27017,yaykyiyar-shard-00-01-ajgvf.azure.mongodb.net:27017,yaykyiyar-shard-00-01-ajgvf.azure.mongodb.net:27017/yky-blog?ssl=true&replicaSet=yaykyiyar-shard-0&authSource=admin&retryWrites=true'
 
 module.exports = {
     mongoURI: dbPassword
@@ -9,7 +10,7 @@ module.exports = {
 
 
 
-
+// mongodb://chanlay:chanlay123@yaykyiyar-shard-00-01-ajgvf.azure.mongodb.net:27017, yaykyiyar-shard-00-00-ajgvf.azure.mongodb.net:27017, yaykyiyar-shard-00-00-ajgvf.azure.mongodb.net:27017/yky-blog?ssl=true&replicaSet=ClusterMasjeed1-shard-0&authSource=admin&retryWrites=true
 
 
 
