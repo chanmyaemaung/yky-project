@@ -169,3 +169,64 @@ NOTE: This is the custom js file for the template
 
 
 })(jQuery);
+
+var arrLang = {
+    'en': {
+        // HEADER
+        'mn_yky': 'Yay Kyi Yar',
+
+        // SIDE NAV
+        'sn_yky': 'Yay Kyi Yar',
+        'sn_travel_company': 'Travel &amp; Tour Co., Ltd.',
+        'sn_home': 'Home',
+        'sn_contact': 'Contact',
+        'sn_desti': 'Destination',
+        'sn_team': 'Our Team',
+        'sn_gallery': 'Gallery',
+        'sn_blog': 'Blog',
+
+        // SERVICE
+        'os_our': 'Our',
+        'os_ser': 'Services',
+        'os_book': 'BookingTickets',
+        'os_plan': 'PlanningTours',
+        'os_docu': 'Documents',
+        'os_bookho': 'BookingHotel',
+        'os_travel': 'TravelInsurance',
+        'os_trans': 'Transport'
+    },
+    'mm': {
+        // HEADER
+        'mn_yky': 'ေရၾကည္ရာ',
+
+        // SIDE NAV
+        'sn_yky': 'ေရၾကည္ရာ',
+        'sn_travel_company': 'ေရၾကည္ရာ ေအဂ်င္စီ',
+        'sn_home': 'မူလ',
+        'sn_contact': 'ဆက္သြယ္ရန္',
+        'sn_desti': 'ခရီးစဥ္မ်ား',
+        'sn_team': 'ကြ်ႏု္ပ္တုိ႔၏ ဝန္ထမ္းမ်ား',
+        'sn_gallery': 'ခရီးသြားဓာတ္ပံုမ်ား',
+        'sn_blog': 'ဘေလာ့စာမ်က္နွာ',
+
+        // SERVICE
+        'os_our': 'ကြ်ႏ္ုပ္တို့၏ ',
+        'os_ser': 'ဝန္ေဆာင္မႈမ်ား',
+        'os_book': 'လက္မွတ္',
+        'os_plan': 'အစီအစဥ္',
+        'os_docu': 'စာတမ္းကိစၥ',
+        'os_bookho': 'ေဟာ္တယ္',
+        'os_travel': 'ခရီးသြားအာမခံ',
+        'os_trans': 'လမ္းခရီး'
+    }
+};
+
+$(function () {
+    $('.translate').click(function () {
+        var lang = $(this).attr('id');
+
+        $('.lang').each(function (index, item) {
+            $(this).text(arrLang[lang][$(this).attr('key')]);
+        });
+    });
+});
