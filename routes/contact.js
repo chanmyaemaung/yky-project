@@ -21,8 +21,8 @@ router.post('/', (req, res) => {
         secure: true,
 
         auth: {
-            user: 'maungmaungyoker.mmy@gmail.com', // process.env.EMAIL
-            pass: 'Mg18Nin$' // process.env.PASSWORD
+            user: '', // process.env.EMAIL
+            pass: '' // process.env.PASSWORD
         }
     })
 
