@@ -1,13 +1,3 @@
-/**
-* Template Name: Travel - Multipurpose HTML Mobile Template
-* Version: 1.0
-* Author: HidraTheme 
-* Developed By: HidraTheme  
-* Author URL: https://themeforest.net/user/hidratheme
-
-NOTE: This is the custom js file for the template
-**/
-
 (function ($) {
 
     "use strict";
